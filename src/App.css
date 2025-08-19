@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
+
+.app {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	filter: blur(8px);
+	transform: scale(1.1);
+	z-index: -1;
+}
+
+.popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	background-color: #c0c0c0;
+	border: 2px solid #000;
+	box-shadow: 4px 4px 0px #000;
+}
+
+.popup-titlebar {
+	background: #000080;
+	color: white;
+	font-size: 1.15rem;
+	padding: 0.5rem 1rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #000;
+}
+
+.close-button {
+	background: #c0c0c0;
+	border: 1px solid #000;
+	width: 1.5rem;
+	height: 1.5rem;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+	text-align: center;
+	padding: 0;
+}
+
+.close-button:hover {
+	background: #ff0000;
+	color: white;
+}
+
+.popup-content {
+	padding: 1rem 1.5rem;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	font-family: 'Fira Mono', monospace;
+}
+
+.popup-content h1 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.popup-content p {
+	font-size: 1rem;
+	margin: 0;
+}
+
+.roblox-icon {
+	display: inline-block;
+	margin-top: 0.5rem;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.roblox-icon img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.roblox-icon:hover {
+	transform: scale(1.1);
+}
